@@ -41,7 +41,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Book</a>
+                    <a href="#" class="nav-link" data-toggle='modal' data-target='#bookingModal'>Book</a>
                 </li>
 
             </ul>
@@ -225,7 +225,7 @@
         </div>
     </section>
 
-    <section class='bg-dark'>
+    <section id='newsletter' class='bg-dark'>
         <div class="container text-white text-center py-5">
             <p class="lead">JOIN OUR NEWSLETTER FOR DEALS</p>
             <div class="row justify-content-center">
@@ -258,7 +258,9 @@
                 <a href="" class="nav-link text-white">CONTACT</a>
             </li>
             <li class="nav-item">
-                <a href="" class="nav-link text-white">BOOK NOW</a>
+                <a href="" class="nav-link text-white" data-toggle='modal' data-target='#bookingModal'>BOOK NOW
+
+                </a>
             </li>
         </ul>
     </section>
@@ -268,6 +270,45 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class='modal-title'>New Booking</h5>
+                    <button type='button' class='close' data-dismiss="modal" aria-label="close">
+                        <span aria-hidden='true'>
+                            &times;
+                        </span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="emailInput">Email Address</label>
+                            <input type="email" name="emailInput" id="emailInput" class='form-control' placeholder='name@example.com'>
+                        </div>
+                        <div class="form-group">
+                            <label for="adultsInput">Number of Adults</label>
+                            <select name="" id="adults" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="childrenInput">Number of Children</label>
+                            <select name="" id="childrenInput" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="requestsInput">Additional Requests</label>
+                            <textarea name="requestsInput" id="requestsInput" class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary">Submit Request</button>
+                            <button class="btn btn-secondary" data-dismiss='modal'>Close</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
