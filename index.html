@@ -54,7 +54,7 @@
             <h3 class="display-5 mb-0">MODERN CAMPING</h3>
             <h1 class="display-1">NORTHERN NOMADS</h1>
             <p class="lead d-none d-md-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.</p>
-            <button id='book' class="btn btn-primary px-5">BOOK NOW</button>
+            <button id='book' class="btn btn-primary px-5" data-toggle='modal' data-target='#bookingModal'>BOOK NOW</button>
         </div>
     </section>
 
@@ -263,6 +263,15 @@
         </ul>
     </section>
 
+    <div class="modal" id='bookingModal' tabindex="-1" role='dialog'>
+        <div class="modal-dialog" role='document'>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class='modal-title'>New Booking</h5>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
