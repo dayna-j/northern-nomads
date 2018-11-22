@@ -27,15 +27,16 @@ section{
 }
 
 #showcase {
-    background: url("../../images/main.jpg") bottom center / cover no-repeat;
+    background: url("../../images/main2.jpg") bottom center / cover no-repeat;
     min-height: 750px;
     position: relative;
+    color: whitesmoke;
     #header {
         z-index: 2;
     }
     #overlay {
         position: absolute;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.6);
         top: 0;
         left: 0;
         width: 100%;
