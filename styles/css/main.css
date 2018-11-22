@@ -9110,6 +9110,10 @@ body {
   border-radius: 2rem;
 }
 
+#quotes i {
+  opacity: 0.3;
+}
+
 @media (max-width: 768px) {
   .navbar {
     background-color: #1f1f1f;
